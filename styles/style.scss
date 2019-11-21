@@ -14,10 +14,10 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+    margin-top:20px;
 }
 
 h1,
-h2,
 h3 {
     font-family: 'Calligraffitti', sans-serif;
     margin-bottom: 5px;
@@ -25,11 +25,11 @@ h3 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 8rem;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 h3 {
@@ -41,54 +41,100 @@ a {
     color: $main-white;
 }
 
+p {
+    font-size: 1.5em;
+}
+
 //Index Specific
 
 .home-container {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr 4fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr 1fr;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
 }
 
-#main-name {
-    grid-row-start: 2;
-    align-self: end;
+.gift-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 1.5em;
+    grid-row-gap: 1.5em;
+    margin-left:15px;
+    margin-right:15px;
 }
 
-#main-logo {
+.gift {
+border: 5px solid rgb(163, 40, 40);
+background-color: $main-white;
+color:$main-gray;
+opacity: 0.9;
+border-radius: 8px;
+box-shadow: 4px 6px 20px grey;
+}
+
+#main-name {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    align-self: end;
+    grid-row:1/3;
+}
+
+/*#main-logo {
     grid-row-start: 3;
     grid-column-start: 2;
     width: 200px;
     opacity: 0.6;
     justify-self: center;
     align-self: flex-end;
-}
+}*/
 
 #main-description {
     grid-row-start: 3;
-}
-
-#main-quote {
-    grid-row-start: 2;
-    line-height: 3;
-    justify-self: center;
-    align-self: center;
-    font-size: 1.4rem;
-    font-style: italic;
+    grid-column-start:2;
 }
 
 #main-pic {
     width: 100%;
     grid-row-start: 2;
-    grid-column-start: 2;
-    box-shadow: 4px 6px 20px grey;
+    grid-column-start: 4;
     border-radius: 15%;
     max-width: 400px;
     opacity: 0.8;
+    min-width:300px;
+}
+
+#run {
+    grid-row-start: 3;
+    grid-column-start: 3;
+    width:10%;
+    height: 10%;
+    border: 2px solid red;
+    border-radius:8px;
+    justify-self: center;
+    align-self: end;
+    min-width:120px;
+
+}
+
+#txtMaxPrice {
+    grid-row-start: 4;
+    grid-column-start: 3;
+    min-width:10%;
+    max-width:15%;
+    min-height:10%;
+    max-height:15%;
+    border: 2px solid red;
+    border-radius:8px;
+    justify-self: center;
+    align-self: start;
+    min-width:120px;
 }
 
 
+
+/*
 
 // Nav
 
@@ -129,6 +175,7 @@ a {
         }
     }
 }
+*/
 
 // Footer
 
