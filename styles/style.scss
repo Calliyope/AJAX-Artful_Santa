@@ -51,7 +51,7 @@ p {
 .home-container {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
 }
@@ -82,7 +82,8 @@ p {
 #main-name {
     grid-row-start: 1;
     grid-column-start: 2;
-    align-self: center;
+    align-self: start;
+
 }
 
 #main-description {
@@ -99,7 +100,17 @@ p {
     min-width: 300px;
 }
 
-#run {
+#cane-pic {
+    width: 40%;
+    height: 90%;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    max-width: 350px;
+    opacity: 0.8;
+    min-width: 300px;
+}
+
+/*#run {
     width: 10%;
     height: 10%;
     border: 2px solid red;
@@ -108,9 +119,9 @@ p {
     align-self: start;
     min-width: 120px;
 
-}
+}*/
 
-#txtMaxPrice {
+/*#txtMaxPrice {
     min-width: 10%;
     max-width: 15%;
     min-height: 10%;
@@ -120,7 +131,7 @@ p {
     justify-self: center;
     align-self: start;
     min-width: 120px;
-}
+}*/
 
 #form {
     grid-row-start: 2;

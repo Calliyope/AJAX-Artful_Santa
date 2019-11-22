@@ -112,14 +112,3 @@ document.getElementById("run").addEventListener("click", async function () {
 });
 
 LoadGifts();
-
-
-// Snowstorm stuff
-
-src = "//cdnjs.cloudflare.com/ajax/libs/Snowstorm/20131208/snowstorm-min.js" >
-
-    snowStorm.snowColor = '#6699cc'; //give the snowflakes another colour
-snowStorm.flakesMaxActive = 96; //the maximum number of active snow flakes on the screen, lowering this may increase performance
-snowStorm.followMouse = false; //the snow will fall in a certain direction based on the position of your mouse
-snowStorm.snowCharacter = '★'; //change the flake to a specific character
-snowStorm.snowStick = true; //if true, the snow will stick to the bottom of the screen
