@@ -16,6 +16,7 @@ body {
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 30px;
+    font-size: 1.5em;
 }
 
 h1,
@@ -83,6 +84,7 @@ p {
     grid-row-start: 1;
     grid-column-start: 2;
     align-self: start;
+    margin-top: 60px;
 
 }
 
@@ -98,16 +100,18 @@ p {
     max-width: 400px;
     opacity: 0.8;
     min-width: 300px;
+    justify-self:end;
 }
 
 #cane-pic {
     width: 40%;
-    height: 90%;
+    height: 80%;
     grid-row-start: 1;
     grid-column-start: 1;
-    max-width: 350px;
+    max-width: 300px;
     opacity: 0.8;
     min-width: 300px;
+    justify-self: end;
 }
 
 /*#run {
@@ -133,9 +137,16 @@ p {
     min-width: 120px;
 }*/
 
-#form {
+#formDiv {
     grid-row-start: 2;
     grid-column-start: 3;
+    justify-self: center;
+    align-self: flex-start;
+    color: $main-white;
+    border: $main-white 25px dotted;
+    padding: 15px 15px 15px 15px;
+    margin: 10px 10px 10px 10px;
+    align-items: stretch;
 }
 
 

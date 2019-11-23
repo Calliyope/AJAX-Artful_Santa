@@ -18,6 +18,7 @@ body {
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
+  font-size: 1.5em;
 }
 
 h1,
@@ -95,6 +96,7 @@ p {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
+  margin-top: 60px;
 }
 
 #main-description {
@@ -113,18 +115,22 @@ p {
   max-width: 400px;
   opacity: 0.8;
   min-width: 300px;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
 #cane-pic {
   width: 40%;
-  height: 90%;
+  height: 80%;
   -ms-grid-row: 1;
       grid-row-start: 1;
   -ms-grid-column: 1;
       grid-column-start: 1;
-  max-width: 350px;
+  max-width: 300px;
   opacity: 0.8;
   min-width: 300px;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
 /*#run {
@@ -148,11 +154,22 @@ p {
     align-self: start;
     min-width: 120px;
 }*/
-#form {
+#formDiv {
   -ms-grid-row: 2;
       grid-row-start: 2;
   -ms-grid-column: 3;
       grid-column-start: 3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: #F3EFF5;
+  border: #F3EFF5 25px dotted;
+  padding: 15px 15px 15px 15px;
+  margin: 10px 10px 10px 10px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 footer {

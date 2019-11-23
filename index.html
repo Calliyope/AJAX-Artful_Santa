@@ -25,30 +25,32 @@
     <section class="home-container">
         <img id="main-pic" src="images/santa_5.png" alt="Agent Santa">
         <img id="cane-pic" src="images/cane_1.png" alt="Cane">
+        <div id="formDiv">
+            <form id=form>
+                <p>Enter your max budget!</p>
+                <input id="txtMaxPrice" type="text" value="15" /><br>
 
-        <form id=form>
-            <p>Enter your max budget!</p>
-            <input id="txtMaxPrice" type="text"><br></input><br>
+                <p>Are you buying a gift for a man or a woman?</p>
+                <input type="radio" name="gender" value="unisex" checked="checked"> Unisex </input><br>
+                <input type="radio" name="gender" value="men"> Man </input><br>
+                <input type="radio" name="gender" value="women"> Woman </input><br>
+                
+                <p>How old is the lucky recipient?</p>
+                <input id="age" type="number" name="quantity"> years old<br>
+                <br>
 
-            <p>Is this gift for a man or a woman?</p>
-            <input id="man" type="radio" name="gender" value="male"> Man<br>
-            <input id="woman" type="radio" name="gender" value="female"> Woman<br>
-
-            <p>How old is the lucky recipient?</p>
-            <input id="age" type="number" name="quantity" min="1" max="5"> years old<br>
-            <br>
-
-            <button type="button" id="run">Sneak-a-Peek</button>
-        </form>
-
+                <button type="button" id="run">Sneak-a-Peek</button>
+                <button type="button" id="refresh">Refresh</button>
+            </form>
+        </div>
         <h1 id="main-name">The <br> Artful <br> Santa</h1>
 
-        <p id="main-description"> Did you pull a complete stranger in this years office secret santa? <br><br>
+        <h2 id="main-description"> Did you pull a complete stranger in this years office secret santa? <br><br>
             <strong>Never
                 fear!</strong>
             <br><br>
             Let us help you find a perfect, impersonal gift from a webshop which specialises in things which appear
-            heartfelt. </p>
+            heartfelt. </h2>
 
     </section>
 
@@ -67,11 +69,12 @@
 
     <!-- END FOOTER -->
 
+    <!-- Snowstorm-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Snowstorm/20131208/snowstorm-min.js"> </script>
+
     <!-- The JS -->
     <script src="js/script.js"></script>
 
-    <!-- Snowstorm-->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/Snowstorm/20131208/snowstorm-min.js"> </script>
 
 </body>
 
