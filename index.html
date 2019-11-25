@@ -17,49 +17,60 @@
 </head>
 
 <body>
+    <nav class="nav">
+        <img src="images/cane_1.png">
+    </nav>
+    <!-- START MAIN SECTION -->
 
-    <!-- START HOME SECTION -->
+    <section class="main-container">
 
+        <div id="main-pic-div">
+            <img id="main-pic" src="images/santa_5.png" alt="Agent Santa">
+        </div>
 
-
-    <section class="home-container">
-        <img id="main-pic" src="images/santa_5.png" alt="Agent Santa">
-        <img id="cane-pic" src="images/cane_1.png" alt="Cane">
-        <div id="formDiv">
+        <div id="main-form-div">
             <form id=form>
                 <p>Enter your max budget!</p>
                 <input id="txtMaxPrice" type="text" value="15" /><br>
 
-                <p>Are you buying a gift for a man or a woman?</p>
+                <p>Should we search for a gender?</p>
                 <input type="radio" name="gender" value="unisex" checked="checked"> Unisex </input><br>
                 <input type="radio" name="gender" value="men"> Man </input><br>
-                <input type="radio" name="gender" value="women"> Woman </input><br>
-                
-                <p>How old is the lucky recipient?</p>
-                <input id="age" type="number" name="quantity"> years old<br>
-                <br>
+                <input type="radio" name="gender" value="women"> Woman </input><br><br>
 
-                <button type="button" id="run">Sneak-a-Peek</button>
-                <button type="button" id="refresh">Refresh</button>
+                <button class="button" type="button" id="run">Sneak-a-Peek</button>
             </form>
         </div>
-        <h1 id="main-name">The <br> Artful <br> Santa</h1>
 
-        <h2 id="main-description"> Did you pull a complete stranger in this years office secret santa? <br><br>
-            <strong>Never
-                fear!</strong>
-            <br><br>
-            Let us help you find a perfect, impersonal gift from a webshop which specialises in things which appear
-            heartfelt. </h2>
+        <div id="main-title-div">
+            <h1 id="main-title">The <br> Artful <br> Santa</h1>
+            <!-- <img id="main-title-pic" src="images/cane_1.png" alt="Cane"> -->
+        </div>
 
+        <div id="main-description-div">
+            <h2 id="main-description"> Did you pull a complete stranger in this years office secret santa? <br><br>
+                <strong>Never
+                    fear!</strong>
+                <br><br>
+                Let us help you find a perfect, impersonal gift from a webshop which specialises in things which appear
+                heartfelt. </h2>
+        </div>
+
+        <div id=more-button>
+            <button class="button" type="button" id="refresh">See more results</button>
+        </div>
+
+        <img id="curtain-left" class="curtains" src="images/curtain-left.png" />
+        <img id="curtain-right" class="curtains" src="images/curtain-right.png" />
     </section>
 
     <div id="target" class="gift-container">
 
+        <!-- JAVASCRIPT GENERATED CONTENT GOES HERE-->
 
     </div>
 
-    <!-- END HOME SECTION -->
+    <!-- END MAIN SECTION -->
 
     <!-- FOOTER -->
 
@@ -69,7 +80,7 @@
 
     <!-- END FOOTER -->
 
-    <!-- Snowstorm-->
+    <!-- SNOWSTORM-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/Snowstorm/20131208/snowstorm-min.js"> </script>
 
     <!-- The JS -->
