@@ -189,8 +189,11 @@ function CleanUpListingTitle(title) {
 //document.getElementsByClassName("red-text").forEach(button => button.addEventListener(...)));
 
 document.getElementById("run").addEventListener("click", async function () {
-    LoadGifts(), window.scrollTo(0, document.body.scrollHeight);;
+    LoadGifts(),
+        document.getElementById("target").scrollIntoView();
 });
+
+
 
 document.getElementById("refresh").addEventListener("click", async function () {
     LoadGifts();
